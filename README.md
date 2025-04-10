@@ -53,13 +53,6 @@ A new Flutter project.
 
 ---
 
-## 📸 Screenshots
-
-| Search User | Profile Page | Repo Cards |
-|-------------|--------------|------------|
-| search.mov |  |  |
-
----
 
 ## 🛠️ Installation
 
