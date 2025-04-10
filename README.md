@@ -2,15 +2,69 @@
 
 A new Flutter project.
 
-## Getting Started
+## 📱 Features
 
-This project is a starting point for a Flutter application.
+- 🔍 **GitHub Username Search**
+  - Enter a username and fetch data directly from GitHub's API.
+  - Displays user avatar, name, and company.
+  - Local caching using a simple list mechanism.
 
-A few resources to get you started if this is your first Flutter project:
+- 🧭 **Bottom Navigation Bar**
+  - Seamless navigation across sections like Profile, Repositories, Starred Repos, and Organizations.
+  - BLoC pattern ensures state is maintained across tabs.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🧠 **State Management with BLoC**
+  - Uses `flutter_bloc` for predictable state management.
+  - DashboardBloc stores:
+    - `selectedIndex` for tabs
+    - `selectedUser` for profile-wide access across screens
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 🧾 **GitHub User Details**
+  - Displays:
+    - Avatar
+    - Name
+    - Company
+    - Achievements (Badges)
+    - Repositories Count
+    - Starred Count
+    - Organizations Count
+
+- 🎖️ **Achievement Badges**
+  - Horizontally scrollable UI showing earned badges using custom `ListView.builder`.
+
+- 📦 **Repositories**
+  - Popular repository cards showing:
+    - Repo Name
+    - Description
+    - Star Count
+    - Language with dot indicator
+
+---
+
+## 🧱 Tech Stack
+
+- 💙 Flutter
+- 🌀 BLoC (flutter_bloc)
+- 🌐 GitHub REST API v3
+- 📦 Packages:
+  - `flutter_bloc`
+  - `http`
+  - `equatable` (optional for states)
+
+---
+
+## 📸 Screenshots
+
+| Search User | Profile Page | Repo Cards |
+|-------------|--------------|------------|
+| ![Search](assets/search.png) | ![Profile](assets/profile.png) | ![Repo](assets/repo.png) |
+
+---
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/yourusername/github_profile_viewer.git
+cd github_profile_viewer
+flutter pub get
+flutter run
