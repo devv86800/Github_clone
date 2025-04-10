@@ -57,7 +57,7 @@ A new Flutter project.
 
 | Search User | Profile Page | Repo Cards |
 |-------------|--------------|------------|
-| ![Search](assets/search.png) | ![Profile](assets/profile.png) | ![Repo](assets/repo.png) |
+| search.mov |  |  |
 
 ---
 
